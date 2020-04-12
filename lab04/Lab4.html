@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Lab 4 by Michael Daly</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header class="center">
+				<h1>Registration</h1>
+				<p>Please enter the following information. Fields marked with an asterisk (<span class="required">*</span>) are required.</p>
+			</header>
+			<div id="content">
+			<form>
+			<fieldset>
+					<legend>Personal Information</legend>
+					<table>
+					<tr>
+						<td colspan="2">
+							<p class="content">
+								<span class="required">*</span>First Name:
+							</p>
+						</td>
+						<td>
+							<input type="text" name="firstname">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p class="content">
+								<span class="required">*</span>Last Name:
+							</p>
+						</td> 
+						<td>
+							<input type="text" name="lastname">
+						</td> 
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p class="content">
+								<span class="required">*</span>Address:
+							</p>
+						</td> 
+						<td>
+							<input size="40" type="text" name="address">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="content">
+								<span class="required">*</span>City:
+							</p>
+						</td> 
+						<td>
+							<input type="text" name="city">
+						<td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p class="content">
+								<span class="required">*</span>Province
+							</p>
+						</td >
+						<td>
+							<select name="province">
+							<option value="AA">Select a province</option>
+							<option value="BC">British Columbia</option>
+							<option value="AB">Alberta</option>
+							<option value="SK">Saskatchewan</option>
+							<option value="MB">Manitoba</option>
+							<option value="ON">Ontario</option>
+							<option value="QC">Quebec</option>
+							<option value="NB">New Brunswick</option>
+							<option value="NS">Nova Scotia</option>
+							<option value="PE">Prince Edward Island</option>
+							<option value="NF">Newfoundland</option>
+							<option value="YK">Yukon</option>
+							<option value="NWT">Northwest Territories</option>
+							<option value="NU">Nunavut</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p class="content">
+								<span class="required">*</span>Postal Code 
+							</p>
+						</td>
+						<td><input type="text" name="postalcode" maxlength="6"></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p class="content">
+								<span class="required">*</span>Email Address:
+							</p>
+						</td> 
+						<td>
+							<input type="text" name="email">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p class="content">
+								<span class="required">*</span>Home Phone:
+							</p>
+						</td> 
+						<td>
+							<input type="text" name="homephone">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p class="content">Work Phone:</p>
+						</td> 
+						<td>
+							<input type="text" name="workphone">
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Payment Information</legend>
+					<table>
+						<tr>
+							<td colspan="2">
+								<p class="content">Credit Card Type:</p>
+							</td> 
+							<td>
+								<img src="images/visa.png" alt="Visa">
+								<input type="radio" name="creditcard" value="visa">
+								<img src="images/mastercard.png" alt="MasterCard">
+								<input type="radio" name="creditcard" value="master">
+								<img src="images/amex.png" alt="Amex">
+								<input type="radio" name="creditcard" value="amex">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<p class="content">Credit Card Number </p>
+							</td>
+							<td><input type="text" name="ccnum"></td>
+						</tr>
+						<tr>
+							<td>
+								<p class="content">Expiry(MM/YY)</p>
+							</td> 
+							<td>
+								<input type="text" name="expirymonth" size="2"> / <input type="text" name="expiryyear" size="2">
+							<td>
+						</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Agree and Submit</legend>
+				<table>
+					<tr>
+						<td>
+							<p class="content">Check if you agree with our <a href="#">Terms and Conditions</a></p>
+						</td>
+						<td>
+							<input type="checkbox" name="agreement" value="agree">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p class="content">
+								<button type="submit" value="Submit">Submit Registration</button> 
+								<button type="reset" value="Reset">Reset Form</button> 
+							<p>
+						</td>
+					</tr>			
+				</table>
+			</fieldset>
+			</form>
+			</div><!-- End Content -->
+			<footer>	
+				<p>&copy;2013 CST8285. All rights reserved.</p>
+			</footer>
+		</div><!-- End Wrapper -->
+	</body>
+</html>

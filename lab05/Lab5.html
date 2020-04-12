@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab5 Template</title>
+	<meta charset="utf-8">
+
+	<script>
+		function listOddEvenNumbers(){
+			var number = parseInt(document.getElementById('num').value);
+			var output = "";
+			if(!isNaN(number) && number >= 4 && number <= 100){
+			output += ("<br>The number you entered is: " + number + "<br>");			
+			var even = ("<br>The even numbers are: ");
+			var odd = ("<br>The odd numbers are: ")
+			for(var i = 0; i <= number;i++){
+				if(i%2 == 0){
+					if(i < number && i+1 < number){
+						even += (i + ",");
+					}
+					else{
+						even += (i + "<br>");
+					}
+				}
+				if(i%2 != 0){
+					if(i < number  && i+1 < number){
+						odd += (i + ",");
+					}
+					else{
+						odd += (i + "<br>");
+					}
+				}
+			}
+			output += even;
+			output += odd;
+			}
+			else {
+				output += "<br>Invalid Number. Enter a number between 4-100";
+			}
+			document.getElementById("output").innerHTML = output;
+		}
+	</script>
+</head>
+
+<body>
+			<h3>Lab 5 - Intro to JavaScript</h3>
+			<div style="margin-top: 10px;" id="result">
+            
+				Enter a number:  <input type="text" id="num" name="num" value="0" />
+				<input type="button" value="List Odd and Even Numbers" onclick="listOddEvenNumbers(num);" name="find" />
+				<div id="output"></div>
+            </div>
+        
+</body>
+</html>
